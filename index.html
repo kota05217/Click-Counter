@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Click Counter</title>
+  </head>
+  <div class="main">
+
+    <h3>クリックしてね</h3>
+    <button id="clickme">0 Clicks</button>
+
+  </div>
+</html>
+<script>
+  var button = document.getElementById("clickme")
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  button.innerHTML =  `${count} Clicks`;
+}
+</script>
